@@ -4,7 +4,6 @@ from django.conf import settings
 client = StripeClient(settings.STRIPE_SECRET_KEY)
 
 def create_payment_intent(amount, currency, user_id):
-    print(f"Using key: {settings.STRIPE_SECRET_KEY}")
     payment_intent = client.v1.payment_intents.create({
         "amount": amount,
         "currency": currency,
