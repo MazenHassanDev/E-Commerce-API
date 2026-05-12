@@ -129,6 +129,8 @@ SIMPLE_JWT = {
 }
 
 STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
+STRIPE_WEBHOOK_SECRET = config('STRIPE_WEBHOOK_SECRET')
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
